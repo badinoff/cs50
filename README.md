@@ -4,7 +4,7 @@ I am only starting my programmer's journey. I would appreciate any feedback!
 
 ## Structure
 - `week1/`: [Empty]
-- `week2/`: Scrabble game (input validation, coming soon: scoring).
+- `week2/`: Scrabble game completed. Additional features (isalpha, reprompt on EOF, versioning scripts for git) added beyond problem set requirements.
 - `week3/`: [Empty]
 
 ## Usage
