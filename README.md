@@ -2,6 +2,8 @@
 My solutions and projects for Harvard's CS50 course.
 I am only starting my programmer's journey. I would appreciate any feedback!
 
+I also deliberately do not use cs50.h and explore the classic, OG C.
+
 My implementations will seem like an overkill, but I do it on purpose to enhance my learning experience.
 
 ## Structure
