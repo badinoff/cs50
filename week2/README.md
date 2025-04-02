@@ -2,6 +2,8 @@
 A simple Scrabble game that takes two words, scores them, and declares a winner or tie. Built for CS50 Week 2 (arrays) problem set, using modular C code.
 cs50.h was not used in this code. Classic C functions only.
 
+It's definitely an overkill implementation, but I did it on purpose to enhance my learning experience and lay path for hypothetical scaling and function reuse.
+
 ## Features
 - Input validation for letters only collected from 2 players
 - Scores words using standard cs50 Scrabble point values.
