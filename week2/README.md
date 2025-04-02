@@ -1,31 +1,18 @@
 # Scrabble (Week 2)
-A simple Scrabble game that takes two words, scores them, and declares a winner or tie. Built for CS50 Week 2 (arrays) problem set, using modular C code.
-cs50.h was not used in this code. Classic C functions only.
+A CS50 Week 2 problem set where two players enter words, scored using standard Scrabble point values (array in `main.c`). The program computes calculated scores and compares them to determine a winner. Built with modular C code, deliberately avoiding `cs50.h` to rely on classic C functions. The over-engineered design enhances complexity for learning and future scalability.
 
-It's definitely an overkill implementation, but I did it on purpose to enhance my learning experience and lay path for hypothetical scaling and function reuse.
-
-
-## Flow 
-
-Two players participate. Each enters an arbitrary word. Each letter of the word is scored according to points that each letter is worth (see array in main.c). 
-The program calculated the score for each player's word, compared the does and declared a winner. 
-
-ca50 problem sweet link: 
-
-https://cs50.harvard.edu/x/2025/psets/2/scrabble/
+**Link to cs50 problem set:** [https://cs50.harvard.edu/x/2025/psets/2/scrabble/](https://cs50.harvard.edu/x/2025/psets/2/scrabble/)
 
 ## Features
-- Input validation for letters only collected from 2 players
-- Scores words using standard cs50 Scrabble point values.
-- Compares scores and prints the result.
+- Validates input (allows letters only) from 2 players.
+- Determines and compares word scores.
+- Prints the result.
 
 ## Files
-- `main.c`: Entry point and game logic.
-- `inputval.c`: Input capture and validation logic.
-- `inputval.h`: Header for input functions.
-- `scoring.c`: Scoring logic for words.
-- `scoring.h`: Header for scoring functions.
-- `version.h`: Version tracking.
+- `main.c`: Game logic
+- `inputval.c/h`: Input validation
+- `scoring.c/h`: Scoring logic
+- `version.h`: Version tracking
 
 ## Build
 ```bash
