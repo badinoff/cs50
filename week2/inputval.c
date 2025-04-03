@@ -28,13 +28,6 @@ int validate(char* input)
         return 1;  // Invalid
     }
 
-    for (int i = 0; i < strlen(input); i++) {
-        if (!isalpha(input[i])) {
-            printf("Invalid input. Letters Only!\n");
-            return 1;  // Invalid
-        }
-    }
-
     return 0;  // Valid
 }
 

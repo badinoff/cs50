@@ -20,8 +20,8 @@ int main(void)
     int score2 = compute_score(word2);
 
     //Print the words and their scores
-    printf("Player 1 scores %d - %s points\n", score1, word1);
-    printf("Player 2 scores %d - %s points\n", score2, word2);
+    printf("Player 1 scores %d points\n", score1);
+    printf("Player 2 scores %d points\n", score2);
 
     //Compare scores and print winner
     if (score1 > score2) {
