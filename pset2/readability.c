@@ -36,15 +36,15 @@ int main(void)
     printf ("%i\n", count_words(text));
     printf("%i\n", count_sentences(text));   
     printf("%f\n", formula); 
-*/
-    
-int count_letters(string text)
-{                                                                       // Count alpha chars and incr 'letters' for each
-
+*/    
+int count_letters(string text)                      // Count alpha chars and incr 'letters' for each
+{                                                                       
     int letters = 0; 
 
-    for (int i = 0; text[i] != '\0'; i++) {        
-        if (isalpha(text[i])) {
+    for (int i = 0; text[i] != '\0'; i++)
+    {        
+        if (isalpha(text[i]))
+        {
             letters++;
         }
     }
@@ -52,12 +52,15 @@ int count_letters(string text)
     return letters;
 }
 
-int count_words(string text){                                            // Count spaces with isspace, then +1
+int count_words(string text)                        // Count spaces with isspace, then +1
+{
 
     int words = 0;
 
-    for (int i = 0; text[i] != '\0'; i++) {
-        if (isspace(text[i])) {
+    for (int i = 0; text[i] != '\0'; i++)
+    {
+        if (isspace(text[i]))
+        {
             words++;
         }
     }
@@ -66,13 +69,16 @@ int count_words(string text){                                            // Coun
 
 }
 
-int count_sentences(string text){                                       // Count punctuation occurrances and incr 'sentences'
+int count_sentences(string text)                    // Count punctuation occurrances and incr 'sentences'
+{                                       
 
     int sentences = 0;
 
-    for (int i = 0; text[i] != '\0'; i++) {
+    for (int i = 0; text[i] != '\0'; i++)
+    {
 
-        if (text[i] == '.' || text[i] == '!' || text[i] == '?') {
+        if (text[i] == '.' || text[i] == '!' || text[i] == '?')
+        {
         sentences++;
         }
     }
