@@ -27,7 +27,7 @@ int main(void)
     }
 }
 
-string get_player_word (int player_num)
+string get_player_word(int player_num)
 {
 
    return  get_string("Player %d: ", player_num);
