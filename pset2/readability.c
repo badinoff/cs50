@@ -17,17 +17,11 @@ int main(void)
     int grade_level = (int) round(formula); 
 
     if (grade_level < 1)
-    {
         printf("Before Grade 1\n");
-    }
         else if (grade_level >= 16)
-        {
             printf("Grade 16+\n");
-        }
         else
-        {
             printf ("Grade %i\n", (int) grade_level);
-        }
 }
 /*
     //string scan tests below; comment out the if statement above
@@ -37,7 +31,7 @@ int main(void)
     printf("%i\n", count_sentences(text));   
     printf("%f\n", formula); 
 */    
-int count_letters(string text)                      // Count alpha chars and incr 'letters' for each
+int count_letters(string text)  // Count alpha chars and incr 'letters' for each
 {                                                                       
     int letters = 0; 
 
@@ -52,7 +46,7 @@ int count_letters(string text)                      // Count alpha chars and inc
     return letters;
 }
 
-int count_words(string text)                        // Count spaces with isspace, then +1
+int count_words(string text)    // Count spaces with isspace, then +1
 {
 
     int words = 0;
@@ -69,7 +63,7 @@ int count_words(string text)                        // Count spaces with isspace
 
 }
 
-int count_sentences(string text)                    // Count punctuation occurrances and incr 'sentences'
+int count_sentences(string text)    // Count punctuation occurrances and incr 'sentences'
 {                                       
 
     int sentences = 0;
