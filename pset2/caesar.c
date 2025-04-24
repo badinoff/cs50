@@ -11,14 +11,15 @@ char encrypt(char c, int k);
 
 int main(int argc, string argv[])
 {
-    if (argc != 2) //verify there are only two arguments passed 
+    if (argc != 2) // verify there are only two arguments passed 
     {
         printf("Usage: ./caesar key\n");
         return 1;
     }
+
     for (int i = 0; i < strlen(argv[1]); i++)
     {
-        if (!isdigit(argv[1][i])) //verify that user supplies an integer for key
+        if (!isdigit(argv[1][i])) // verify that user supplies an integer for key
         {
             printf("Usage: ./caesar key\n");
             return 1;
@@ -34,6 +35,7 @@ int main(int argc, string argv[])
     {
         printf("%c", encrypt(plaintext[i], k));
     }
+
     printf("\n");
     return 0;
 }
@@ -49,7 +51,8 @@ char encrypt(char c, int k)
         else
         {
             return ((c - ASCII_a + k) % 26) + 97;
-        }  
+        }
     }
+
     return c;
 }
