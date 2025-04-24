@@ -4,6 +4,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define ASCII_A 65
+#define ASCII_a 97
+
+char encrypt(char c, int k); 
+
 int main(int argc, string argv[])
 {
     if (argc != 2)
@@ -28,25 +33,27 @@ int main(int argc, string argv[])
 
     for (int i = 0; plaintext[i] != '\0'; i++)
     {
-        if (isalpha(plaintext[i]))
+        printf("%c", encrypt(plaintext[i], k));
+              
+    }
+    
+    printf("\n");
+    return 0;
+}    
+
+char encrypt(char c, int k)    
+{
+    if (isalpha(c))
+    {
+        if (isupper(c))
         {
-            if (isupper(plaintext[i]))
-            {
-                char ciphertext = ((plaintext[i] - 65 + k) % 26) + 65;
-                printf("%c", ciphertext);
-            }
-            else 
-            {
-                char ciphertext = ((plaintext[i] - 97 + k) % 26) + 97;
-                printf("%c", ciphertext);
-            }
-            
+            return ((c - ASCII_A + k) % 26) + 65;
         }
         else
         {
-            printf("%c", plaintext[i]);
-        }
+            return ((c - ASCII_a + k) % 26) + 97;
+        }  
     }
-    printf("\n");
-    return 0;
+
+    return c;
 }
